@@ -1,7 +1,27 @@
 aid: picnicai
 name: Picnicai
-description: Picnicai is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  PicnicHealth (PicnicAI; legally Mission Health Labs, Inc.) is a San Francisco
+  health-data company and Y Combinator alum (S14, founded 2014) that turns
+  patients' fragmented medical records into structured, research-ready
+  real-world datasets. Its consumer product gives patients a unified timeline of
+  care across every provider, while PicnicResearch supplies de-identified,
+  ontology-mapped (RxNorm, SNOMED, LOINC, ICD) real-world data to biopharma via
+  AI extraction plus human clinical curation. The primary developer surface is a
+  first-party R package distributed through PicnicHealth's own Posit/RStudio
+  Package Manager for importing and visualizing research cohorts.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://picnic.ai/favicon.ico
 url: https://raw.githubusercontent.com/api-evangelist/picnicai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,63 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Health
+- Healthcare Data
+- Clinical Research
+- Real World Data
+- Machine Learning
+- Medical Records
+- Life Sciences
+common:
+- type: DomainSecurity
+  url: security/picnicai-domain-security.yml
+- type: Website
+  url: https://picnic.ai/
+- type: Documentation
+  url: https://rdocs.picnichealth.com/
+- type: APIReference
+  url: https://data-docs.picnichealth.com/reference/index.html
+- type: GettingStarted
+  url: https://rdocs.picnichealth.com/articles/PicnicHealth.html
+- type: GitHubOrganization
+  url: https://github.com/picnichealth
+- type: SignUp
+  url: https://picnichealth.com/
+- type: Packages
+  url: packages/picnicai-packages.yml
+- type: SDKs
+  url: packages/picnicai-packages.yml
+- type: LLMsTxt
+  url: llms/picnicai-llms.txt
+- type: WellKnown
+  url: well-known/picnicai-well-known.yml
+apis:
+- name: PicnicHealth Research Data (R Package)
+  description: >-
+    First-party R package for importing, transforming, and visualizing
+    PicnicHealth real-world research data (cohorts, medications, labs, clinical
+    codes). Distributed via PicnicHealth's Posit/RStudio Package Manager.
+  humanURL: https://rdocs.picnichealth.com/
+  baseURL: https://rspm.picnichealth.com/github/latest
+  tags:
+  - Real World Data
+  - Clinical Research
+  - R Package
+  properties:
+  - type: Documentation
+    url: https://rdocs.picnichealth.com/
+  - type: Reference
+    url: https://data-docs.picnichealth.com/reference/index.html
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1

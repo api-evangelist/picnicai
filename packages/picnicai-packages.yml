@@ -1,0 +1,39 @@
+generated: '2026-07-20'
+method: searched
+source:
+- https://rdocs.picnichealth.com/
+- https://rdocs.picnichealth.com/articles/PicnicHealth.html
+- https://data-docs.picnichealth.com/reference/index.html
+- https://rspm.picnichealth.com/
+name: Picnicai Packages
+description: >-
+  First-party client packages published by PicnicHealth (Mission Health Labs,
+  Inc.). The primary developer surface is an R package for importing and
+  visualizing PicnicHealth real-world research data, distributed through
+  PicnicHealth's own Posit/RStudio Package Manager (not CRAN).
+packages:
+- name: PicnicHealth
+  registry: rspm
+  registry_name: PicnicHealth Posit/RStudio Package Manager
+  language: R
+  official: true
+  version: 0.3.18
+  repo_url: https://rspm.picnichealth.com/github/latest
+  docs: https://rdocs.picnichealth.com/
+  reference: https://data-docs.picnichealth.com/reference/index.html
+  install: |
+    options(repos = c(getOption("repos"),
+                      PicnicRSPM = "https://rspm.picnichealth.com/github/latest"))
+    install.packages("PicnicHealth")
+  requires: R >= 4.0
+  cran: false
+  description: >-
+    Load, transform, and visualize PicnicHealth research data. Provides
+    functions for medication history retrieval, cohort building, visit-timeline
+    visualization, clinical code mapping (ICD/SNOMED/LOINC/RxNorm), and Table 1
+    generation over structured and unstructured clinical data.
+notes: >-
+  No public REST/OpenAPI product API is published; data access is via the R
+  package above. The rspm.picnichealth.com/__docs__/admin/swagger endpoint is
+  the third-party Posit Package Manager admin API (infrastructure), not a
+  PicnicHealth product API, and is intentionally not captured as an OpenAPI here.

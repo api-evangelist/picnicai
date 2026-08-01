@@ -1,0 +1,45 @@
+generated: '2026-07-20'
+method: probed
+source:
+- https://picnic.ai/
+- https://picnichealth.com/
+name: Picnicai Well-Known
+description: >-
+  Probe of standard /.well-known/ endpoints across PicnicHealth hosts. No
+  well-known documents are published (all 404). Absence is a valid, expected
+  result recorded here for completeness.
+hosts:
+- host: picnic.ai
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+- host: picnichealth.com
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null

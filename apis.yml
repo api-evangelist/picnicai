@@ -37,6 +37,15 @@ tags:
 - Health
 - Healthcare Data
 - Clinical Research
+- Real-World Data
+- Machine-Learning
+- Medical Records
+- Life Sciences
+tags_raw:
+- Company
+- Health
+- Healthcare Data
+- Clinical Research
 - Real World Data
 - Machine Learning
 - Medical Records
@@ -73,6 +82,10 @@ apis:
   humanURL: https://rdocs.picnichealth.com/
   baseURL: https://rspm.picnichealth.com/github/latest
   tags:
+  - Real-World Data
+  - Clinical Research
+  - R Package
+  tags_raw:
   - Real World Data
   - Clinical Research
   - R Package

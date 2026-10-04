@@ -49,7 +49,7 @@ tags:
 - Healthcare Data
 - Clinical Research
 - Real-World Data
-- Machine-Learning
+- Machine Learning
 - Medical Records
 - Life Sciences
 tags_raw:
@@ -61,6 +61,7 @@ tags_raw:
 - Machine Learning
 - Medical Records
 - Life Sciences
+- Machine-Learning
 common:
 - type: DomainSecurity
   url: security/picnicai-domain-security.yml
